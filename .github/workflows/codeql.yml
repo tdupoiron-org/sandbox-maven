@@ -46,7 +46,9 @@ jobs:
       with:
         languages: ${{ matrix.language }}
 
-    - run: mvn clean install -DskipTests
+    - run: |
+        cd sandbox-maven
+        mvn clean install
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v2
