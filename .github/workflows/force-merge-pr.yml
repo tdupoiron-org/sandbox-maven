@@ -26,13 +26,13 @@ jobs:
     - name: Comment on the pull request
       if: github.event.pull_request.user && github.event.pull_request.user.login == 'dependabot[bot]'
       run: |
-        gh pr comment ${{ github.event.pull_request.number }} --body "This PR will be merged automatically."
+        gh pr comment ${{ github.event.pull_request.number }} --body "This PR will be added to the merge queue."
       env:
         GITHUB_TOKEN: ${{ steps.create_token.outputs.token }}
 
     - name: Add to merge queue
       if: github.event.pull_request.user.login && github.event.pull_request.user.login == 'dependabot[bot]'
       run: |
-        gh pr merge ${{ github.event.pull_request.number }} --merge --admin --auto --rebase --repo ${{ github.repository }} --delete-branch 
+        gh pr merge ${{ github.event.pull_request.number }} --merge --admin --auto --queue --repo ${{ github.repository }} --delete-branch 
       env:
         GITHUB_TOKEN: ${{ steps.create_token.outputs.token }}
