@@ -19,6 +19,12 @@ jobs:
         app-id: ${{ vars.APP_ID }}
         private-key: ${{ secrets.PRIVATE_KEY }}
 
+    - name: Comment on the pull request
+      run: |
+        gh pr comment ${{ github.event.pull_request.number }} --body "This PR will be force merged."
+      env:
+        GITHUB_TOKEN: ${{ steps.create_token.outputs.token }}
+
     - name: Merge the pull request
       run: |
         gh pr merge ${{ github.event.pull_request.number }} --merge --admin --repo ${{ github.repository }} --delete-branch 
