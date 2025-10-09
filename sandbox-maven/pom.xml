@@ -44,6 +44,90 @@
   <artifactId>log4j-slf4j-impl</artifactId>
   <version>2.25.2</version>
 </dependency>
+
+<!-- Jackson JSON Processing -->
+<dependency>
+  <groupId>com.fasterxml.jackson.core</groupId>
+  <artifactId>jackson-databind</artifactId>
+  <version>2.17.2</version>
+</dependency>
+
+<dependency>
+  <groupId>com.fasterxml.jackson.core</groupId>
+  <artifactId>jackson-core</artifactId>
+  <version>2.17.2</version>
+</dependency>
+
+<!-- Spring Boot Starter -->
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter</artifactId>
+  <version>3.3.4</version>
+</dependency>
+
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-web</artifactId>
+  <version>3.3.4</version>
+</dependency>
+
+<!-- Apache Commons -->
+<dependency>
+  <groupId>org.apache.commons</groupId>
+  <artifactId>commons-lang3</artifactId>
+  <version>3.17.0</version>
+</dependency>
+
+<dependency>
+  <groupId>commons-io</groupId>
+  <artifactId>commons-io</artifactId>
+  <version>2.16.1</version>
+</dependency>
+
+<!-- Guava -->
+<dependency>
+  <groupId>com.google.guava</groupId>
+  <artifactId>guava</artifactId>
+  <version>33.3.1-jre</version>
+</dependency>
+
+<!-- JUnit 5 for testing -->
+<dependency>
+  <groupId>org.junit.jupiter</groupId>
+  <artifactId>junit-jupiter-engine</artifactId>
+  <version>5.11.2</version>
+  <scope>test</scope>
+</dependency>
+
+<!-- Mockito for testing -->
+<dependency>
+  <groupId>org.mockito</groupId>
+  <artifactId>mockito-core</artifactId>
+  <version>5.14.1</version>
+  <scope>test</scope>
+</dependency>
+
+<!-- HTTP Client -->
+<dependency>
+  <groupId>org.apache.httpcomponents.client5</groupId>
+  <artifactId>httpclient5</artifactId>
+  <version>5.4</version>
+</dependency>
+
+<!-- Database connectivity -->
+<dependency>
+  <groupId>org.postgresql</groupId>
+  <artifactId>postgresql</artifactId>
+  <version>42.7.4</version>
+</dependency>
+
+<!-- Lombok for code generation -->
+<dependency>
+  <groupId>org.projectlombok</groupId>
+  <artifactId>lombok</artifactId>
+  <version>1.18.34</version>
+  <scope>provided</scope>
+</dependency>
   
 </dependencies>
   
