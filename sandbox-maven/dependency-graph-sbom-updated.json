@@ -1,0 +1,251 @@
+{
+  "sbom": {
+    "spdxVersion": "SPDX-2.3",
+    "dataLicense": "CC0-1.0",
+    "SPDXID": "SPDXRef-DOCUMENT",
+    "name": "com.github.tdupoiron-org/sandbox-maven",
+    "documentNamespace": "https://spdx.org/spdxdocs/protobom/3fb51d9f-fddb-4f3d-aa7e-c449db20b61f",
+    "creationInfo": {
+      "creators": [
+        "Tool: protobom-v0.0.0-20251008190524-f20867888b27+dirty",
+        "Tool: GitHub.com-Dependency-Graph"
+      ],
+      "created": "2025-10-09T13:00:08Z"
+    },
+    "packages": [
+      {
+        "name": "org.apache.logging.log4j:log4j-slf4j-impl",
+        "SPDXID": "SPDXRef-maven-org.apache.logging.log4j-log4j-slf4j-impl-2.25.2-75c946",
+        "versionInfo": "2.25.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.logging.log4j/log4j-slf4j-impl@2.25.2"
+          }
+        ]
+      },
+      {
+        "name": "junit:junit",
+        "SPDXID": "SPDXRef-maven-junit-junit-4.13.2-75c946",
+        "versionInfo": "4.13.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "licenseConcluded": "EPL-1.0",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/junit/junit@4.13.2"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.logging.log4j:log4j-core",
+        "SPDXID": "SPDXRef-maven-org.apache.logging.log4j-log4j-core-2.25.0-75c946",
+        "versionInfo": "2.25.0",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "licenseConcluded": "Apache-2.0",
+        "copyrightText": "Copyright 1999-2005 The Apache Software Foundation, Copyright 1999-2012 Apache Software Foundation, Copyright 2005-2006 Tim Fennell",
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.logging.log4j/log4j-core@2.25.0"
+          }
+        ]
+      },
+      {
+        "name": "org.apache.logging.log4j:log4j-api",
+        "SPDXID": "SPDXRef-maven-org.apache.logging.log4j-log4j-api-2.25.2-75c946",
+        "versionInfo": "2.25.2",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:maven/org.apache.logging.log4j/log4j-api@2.25.2"
+          }
+        ]
+      },
+      {
+        "name": "actions/checkout",
+        "SPDXID": "SPDXRef-githubactions-actions-checkout-3..-75c946",
+        "versionInfo": "3.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/actions/checkout@3.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "actions/dependency-review-action",
+        "SPDXID": "SPDXRef-githubactions-actions-dependency-review-action-2..-75c946",
+        "versionInfo": "2.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/actions/dependency-review-action@2.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "actions/checkout",
+        "SPDXID": "SPDXRef-githubactions-actions-checkout-2..-75c946",
+        "versionInfo": "2.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/actions/checkout@2.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "actions/create-github-app-token",
+        "SPDXID": "SPDXRef-githubactions-actions-create-github-app-token-1.11.5-75c946",
+        "versionInfo": "1.11.5",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/actions/create-github-app-token@1.11.5"
+          }
+        ]
+      },
+      {
+        "name": "actions/setup-java",
+        "SPDXID": "SPDXRef-githubactions-actions-setup-java-3.5.1-75c946",
+        "versionInfo": "3.5.1",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/actions/setup-java@3.5.1"
+          }
+        ]
+      },
+      {
+        "name": "actions/checkout",
+        "SPDXID": "SPDXRef-githubactions-actions-checkout-4..-75c946",
+        "versionInfo": "4.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/actions/checkout@4.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "actions/upload-artifact",
+        "SPDXID": "SPDXRef-githubactions-actions-upload-artifact-4..-75c946",
+        "versionInfo": "4.*.*",
+        "downloadLocation": "NOASSERTION",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:githubactions/actions/upload-artifact@4.%2A.%2A"
+          }
+        ]
+      },
+      {
+        "name": "com.github.tdupoiron-org/sandbox-maven",
+        "SPDXID": "SPDXRef-github-tdupoiron-org-sandbox-maven-main-b6b300",
+        "versionInfo": "main",
+        "downloadLocation": "git+https://github.com/tdupoiron-org/sandbox-maven",
+        "filesAnalyzed": false,
+        "externalRefs": [
+          {
+            "referenceCategory": "PACKAGE-MANAGER",
+            "referenceType": "purl",
+            "referenceLocator": "pkg:github/tdupoiron-org/sandbox-maven@main"
+          }
+        ]
+      }
+    ],
+    "relationships": [
+      {
+        "spdxElementId": "SPDXRef-github-tdupoiron-org-sandbox-maven-main-b6b300",
+        "relatedSpdxElement": "SPDXRef-maven-junit-junit-4.13.2-75c946",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-tdupoiron-org-sandbox-maven-main-b6b300",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.logging.log4j-log4j-core-2.25.0-75c946",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-tdupoiron-org-sandbox-maven-main-b6b300",
+        "relatedSpdxElement": "SPDXRef-githubactions-actions-checkout-3..-75c946",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-tdupoiron-org-sandbox-maven-main-b6b300",
+        "relatedSpdxElement": "SPDXRef-githubactions-actions-dependency-review-action-2..-75c946",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-tdupoiron-org-sandbox-maven-main-b6b300",
+        "relatedSpdxElement": "SPDXRef-githubactions-actions-checkout-2..-75c946",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-tdupoiron-org-sandbox-maven-main-b6b300",
+        "relatedSpdxElement": "SPDXRef-githubactions-actions-setup-java-3.5.1-75c946",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-tdupoiron-org-sandbox-maven-main-b6b300",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.logging.log4j-log4j-slf4j-impl-2.25.2-75c946",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-tdupoiron-org-sandbox-maven-main-b6b300",
+        "relatedSpdxElement": "SPDXRef-maven-org.apache.logging.log4j-log4j-api-2.25.2-75c946",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-tdupoiron-org-sandbox-maven-main-b6b300",
+        "relatedSpdxElement": "SPDXRef-githubactions-actions-create-github-app-token-1.11.5-75c946",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-tdupoiron-org-sandbox-maven-main-b6b300",
+        "relatedSpdxElement": "SPDXRef-githubactions-actions-checkout-4..-75c946",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-github-tdupoiron-org-sandbox-maven-main-b6b300",
+        "relatedSpdxElement": "SPDXRef-githubactions-actions-upload-artifact-4..-75c946",
+        "relationshipType": "DEPENDS_ON"
+      },
+      {
+        "spdxElementId": "SPDXRef-DOCUMENT",
+        "relatedSpdxElement": "SPDXRef-github-tdupoiron-org-sandbox-maven-main-b6b300",
+        "relationshipType": "DESCRIBES"
+      }
+    ]
+  }
+}
