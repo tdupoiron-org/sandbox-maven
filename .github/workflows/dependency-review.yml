@@ -1,6 +1,9 @@
 # Dependency Review Action
 #
-# This Action will scan dependency manifest files that change as part of a Pull Request, surfacing known-vulnerable versions of the packages declared or updated in the PR. Once installed, if the workflow run is marked as required, PRs introducing known-vulnerable packages will be blocked from merging.
+# This Action will scan dependency manifest files that change as part of a Pull Request, 
+# surfacing known-vulnerable versions of the packages declared or updated in the PR. 
+# Once installed, if the workflow run is marked as required, PRs introducing known-vulnerable 
+# packages will be blocked from merging.
 #
 # Source repository: https://github.com/actions/dependency-review-action
 # Public documentation: https://docs.github.com/en/code-security/supply-chain-security/understanding-your-software-supply-chain/about-dependency-review#dependency-review-enforcement
@@ -9,13 +12,28 @@ on: [pull_request]
 
 permissions:
   contents: read
+  pull-requests: write
 
 jobs:
   dependency-review:
     runs-on: ubuntu-latest
-    environment: production
     steps:
       - name: 'Checkout Repository'
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
       - name: 'Dependency Review'
-        uses: actions/dependency-review-action@v2
+        uses: actions/dependency-review-action@v4
+        with:
+          # Fail the action if vulnerabilities are found with severity 'moderate' or higher
+          fail-on-severity: moderate
+          # Optional: Allow specific licenses (uncomment and modify as needed)
+          # allow-licenses: MIT, Apache-2.0, BSD-3-Clause, GPL-3.0-or-later
+          # Optional: Deny specific licenses (uncomment and modify as needed)
+          # deny-licenses: GPL-2.0, LGPL-2.1
+          # Comment on the PR with a summary of the review when issues are found
+          comment-summary-in-pr: on-failure
+          # Optional: Fail on scopes (uncomment to only check runtime dependencies)
+          # fail-on-scopes: runtime
+          # Optional: Configure base and head refs for comparison
+          # base-ref: ${{ github.event.pull_request.base.sha }}
+          # head-ref: ${{ github.event.pull_request.head.sha }}
