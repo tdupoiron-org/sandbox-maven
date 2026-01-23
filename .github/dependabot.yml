@@ -10,6 +10,9 @@ updates:
     directory: "/sandbox-maven" # Location of package manifests
     schedule:
       interval: "weekly"
+    ignore:
+      - dependency-name: "org.apache.kafka:kafka-clients"
+        versions: ["*-ce"]
   - package-ecosystem: "devcontainers"
     directory: "/"
     schedule:
