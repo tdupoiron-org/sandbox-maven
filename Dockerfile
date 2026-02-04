@@ -1,7 +1,7 @@
 # Multi-stage Dockerfile with old base images for Dependabot testing
 
 # Stage 1: Build stage with old nginx
-FROM nginx:1.19.0 AS webserver
+FROM nginx:1.29.4 AS webserver
 COPY ./html /usr/share/nginx/html
 
 # Stage 2: Redis old version
