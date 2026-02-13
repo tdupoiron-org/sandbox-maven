@@ -5,11 +5,11 @@ FROM nginx:1.29.5 AS webserver
 COPY ./html /usr/share/nginx/html
 
 # Stage 2: Redis old version
-FROM redis:8.4.0 AS cache
+FROM redis:8.6.0 AS cache
 EXPOSE 6379
 
 # Stage 3: PostgreSQL old version
-FROM postgres:18.1 AS database
+FROM postgres:18.2 AS database
 ENV POSTGRES_DB=testdb
 ENV POSTGRES_USER=testuser
 ENV POSTGRES_PASSWORD=testpass
