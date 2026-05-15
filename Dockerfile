@@ -1,7 +1,7 @@
 # Multi-stage Dockerfile with old base images for Dependabot testing
 
 # Stage 1: Build stage with old nginx
-FROM nginx:1.29.8 AS webserver
+FROM nginx:1.31.0 AS webserver
 COPY ./html /usr/share/nginx/html
 
 # Stage 2: Redis old version
@@ -9,7 +9,7 @@ FROM redis:8.6.3 AS cache
 EXPOSE 6379
 
 # Stage 3: PostgreSQL old version
-FROM postgres:18.3 AS database
+FROM postgres:18.4 AS database
 ENV POSTGRES_DB=testdb
 ENV POSTGRES_USER=testuser
 ENV POSTGRES_PASSWORD=testpass
