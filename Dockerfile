@@ -16,7 +16,7 @@ ENV POSTGRES_PASSWORD=testpass
 EXPOSE 5432
 
 # Stage 4: Final application stage
-FROM python:3.15.0b3
+FROM python:3.15.0b4
 WORKDIR /app
 
 # Copy requirements and install dependencies
