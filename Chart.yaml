@@ -13,5 +13,5 @@ dependencies:
     version: 27.0.15
     repository: https://charts.bitnami.com/bitnami
   - name: nginx
-    version: 25.0.14
+    version: 25.0.15
     repository: https://charts.bitnami.com/bitnami
