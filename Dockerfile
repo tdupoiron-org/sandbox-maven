@@ -5,7 +5,7 @@ FROM nginx:1.31.3 AS webserver
 COPY ./html /usr/share/nginx/html
 
 # Stage 2: Redis old version
-FROM redis:8.8.0 AS cache
+FROM redis:8.8.1 AS cache
 EXPOSE 6379
 
 # Stage 3: PostgreSQL old version
