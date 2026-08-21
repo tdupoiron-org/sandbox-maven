@@ -9,7 +9,7 @@ FROM redis:8.10.0 AS cache
 EXPOSE 6379
 
 # Stage 3: PostgreSQL old version
-FROM postgres:18.4 AS database
+FROM postgres:18.6 AS database
 ENV POSTGRES_DB=testdb
 ENV POSTGRES_USER=testuser
 ENV POSTGRES_PASSWORD=testpass
