@@ -7,11 +7,11 @@ appVersion: "1.0.0"
 
 dependencies:
   - name: postgresql
-    version: 18.11.3
+    version: 18.11.6
     repository: https://charts.bitnami.com/bitnami
   - name: redis
-    version: 28.1.0
+    version: 28.2.3
     repository: https://charts.bitnami.com/bitnami
   - name: nginx
-    version: 25.1.11
+    version: 25.1.14
     repository: https://charts.bitnami.com/bitnami
